@@ -11,7 +11,7 @@ def save_fbx(scene):
 
 	print('AutoFBX::Exporting to FBX in current directory...')
 	bpy.ops.export_scene.fbx(check_existing=False, filepath=newpath, filter_glob="*.fbx", 
-		version='BIN7400', use_selection=False, axis_forward='X', axis_up='Z')
+		version='BIN7400', use_selection=False, axis_forward='X', axis_up='-Z')
 	print('AutoFBX::Done!')
 
 def register():
